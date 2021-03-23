@@ -11,7 +11,6 @@ router.get("/", (req, res) => {
       attributes: ["product_name"],
     },
   })
-    // be sure to include its associated Products
     .then((categoryData) => res.json(categoryData))
     .catch((err) => {
       console.log(err);
@@ -30,7 +29,6 @@ router.get("/:id", (req, res) => {
       attributes: ["category_id"],
     },
   })
-    // be sure to include its associated Products
     .then((categoryData) => res.json(categoryData))
     .catch((err) => {
       res.status(500).json(err);
