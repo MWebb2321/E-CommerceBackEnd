@@ -50,6 +50,27 @@ router.post("/", (req, res) => {
 
 router.put("/:id", (req, res) => {
   // update a tag's name by its `id` value
+  Tag.update(
+    {
+      tag_name: req.body.tag_name,
+    },
+    {
+      where: {
+        id: req.params.id,
+      },
+    }
+  )
+    .then((tagData) => {
+      if (!tagData) {
+        res.stats(404).json({ message: "No Tag found with that ID." });
+        return;
+      }
+      res.json(tagData);
+    })
+    .catch((err) => {
+      console.log(err);
+      res.stats(500).json(err);
+    });
 });
 
 router.delete("/:id", (req, res) => {
