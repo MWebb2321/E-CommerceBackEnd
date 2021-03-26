@@ -33,6 +33,10 @@ Contribute as see you applicable, but make sure they're awesome contributions
 
 node seeds/index.js
 
+## Demo
+
+<a href='https://drive.google.com/file/d/1i8hkHuC-vDc_78JzYzj6Tv48c2qo7AGM/view?usp=sharing'> A video demonstration of the E-Commerce Backend homework assignment </a>
+
 ## Questions
 
 Any comments, questions, concerns? Feel free to contact me at [mwebb2321@github.com](maito:mwebb2321@github.com).
